@@ -1,0 +1,106 @@
+:root{
+    --vermelho:#E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0; /*margem*/
+    padding: 0; /*preenchimento*/
+    box-sizing: border-box; /*tamanho da caixa*/
+}
+
+body{
+    background-color:var(--preta); /*fundo*/
+    font-family: 'Arial', Times, serif; /*familia de fontes*/
+    color: white; /*cor*/
+}
+/*elementos base*/
+header .container{
+    display: flex; /*exibicao*/
+    flex-direction: row; /*direcao flexivel*/
+    align-items: center; /*alinhar itens*/
+    justify-content: space-between; /*justificar o conteudo (espaco entre)*/
+}
+
+header .logo{
+    margin-left: 5px; /*margem esquerda*/
+    color: var(--vermelho); /*cor*/
+    font-family: 'Arial Black', Times; /*familia de fontes*/
+    font-size: 40px; /*tamanho da fonte*/
+}
+
+header nav a{
+    text-decoration: none; /*decoracao de texto*/
+    color:#AAA; /*cor*/
+    margin-right: 10px; /*margem direita*/
+}
+
+header nav a:hover{
+    color: #fff; /*cor*/
+}
+
+
+/*filme principal*/
+.filme-principal{
+    font-size: 20px; /*tamanho da fonte*/
+    background: url(../img/capa.jpg);
+    
+    height:500px; /*altura*/
+    background-size:cover; /*tamanho do fundo*/
+
+    display: flex; /*exibicao, tela flaxivel*/
+    flex-direction: column; /*colona de direcao felxivel*/
+    justify-content: center; /*centralizar conteudo*/
+    align-items: flex-start; /*alinhar itens/ incio flexivel*/
+}
+
+.filme-principal .descricao{
+     margin-top: 10px; /*margem superior*/
+     margin-bottom: 0px; /*margin inferior*/
+}
+
+.titulo{
+    margin-top: 15%; /*margem superior*/
+    font-size: 40px; /*Nome do filme/ tamanho da fonte*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50); /*rgba = red, green, blue, camada alfa*/
+    border: none; /*tirar valor da borda*/
+    color: white; /*cor do elemento*/
+
+    padding: 15px 30px; /*espaco interno do elemento*/
+    margin-right:15px ; /*espacamento entre os elementos*/
+    font-size: 12px; /*modificar tamanho fonte*/
+
+    cursor: pointer; /*mudar o curso para identificar botao*/
+    transition: 1s ease all;
+}
+
+.botao:hover{ /*inverter as cores do botoes*/
+    background-color: white; /*cor de fundo*/
+    color:black; /*cor*/
+}
+
+.botao i{
+    margin-right: 8px; /*margem direita*/
+}
+
+.container{
+    margin-left:20px ; /*margem esquerda*/
+}
+
+.filme-principal .container{  /*limitar a largura*/
+    width: 70%;  /*largura*/
+}
+
+.box-filme{
+    height: 100%;  /*altura*/
+    width: 100%;   /*largura*/
+    display: block; /*exibicao*/
+}
+
+.carrosel-filmes{
+    margin-top: 10px; /*margem superior */
+}
